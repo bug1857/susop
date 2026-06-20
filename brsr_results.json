@@ -1,0 +1,388 @@
+{
+  "report_id": "1972015e-dd47-4531-b592-e12b7e89298c",
+  "analysis_id": "062912ad-3a70-4cc6-9520-7ce5da865a46",
+  "workspace_id": "0b7e285f-0a60-4143-8be4-dfd951145ae5",
+  "tenant_id": "e14d346d-6f85-4757-bda0-2c14065d739d",
+  "generated_at": "2026-06-19T03:10:48Z",
+  "report_version": 1,
+  "status": "completed",
+  "report_completeness_score": 100,
+  "report_completeness_breakdown": {
+    "section_a": 25,
+    "section_b": 25,
+    "section_c": 25,
+    "recommendations": 25
+  },
+  "audit_readiness": "Audit Ready",
+  "executive_summary": "This BRSR Compliance Report (v1) aggregates transaction-level proofs from workspace 'demo A' for project 'Golden Dataset Project 20260619031048'. The report is generated from analysis run version 1 representing period 2026. The compliance check yields a fitness score of 85.0% with 3 deviations and 3 bottleneck activity nodes, where the worst delay is at 'Deliver'. Carbon attribution models tracked a total actual emission of 133.0 kg CO2e (exceeding budget limits), identifying 4 significant carbon hotspots with the largest hotspot at 'Dispatch'. ESG overall scoring achieved 9700.0%, monitoring 3 suppliers. Based on the collected evidence, this disclosure has a completeness score of 100% and is classified as 'Audit Ready'.",
+  "export_ready": true,
+  "report_type": "BRSR",
+  "schema_version": "1.0",
+  "pdf_available": false,
+  "docx_available": false,
+  "pdf_path": null,
+  "docx_path": null,
+  "last_exported_at": null,
+  "generated_from_analysis_version": 1,
+  "generated_from_dataset_id": "034f6664-75eb-472b-a62e-be3027f79fc5",
+  "generated_from_dataset_name": "golden_dataset.csv",
+  "generated_from_project_id": "c772c57d-114f-4e42-8445-2bcd9a231f7e",
+  "snapshot_timestamp": "2026-06-19T03:10:48Z",
+  "section_a": {
+    "organization_id": "e14d346d-6f85-4757-bda0-2c14065d739d",
+    "organization_name": "Demo PVT LTD",
+    "workspace_id": "0b7e285f-0a60-4143-8be4-dfd951145ae5",
+    "workspace_name": "demo A",
+    "project_id": "c772c57d-114f-4e42-8445-2bcd9a231f7e",
+    "project_name": "Golden Dataset Project 20260619031048",
+    "dataset_id": "034f6664-75eb-472b-a62e-be3027f79fc5",
+    "dataset_name": "golden_dataset.csv",
+    "reporting_period": "2026",
+    "report_boundary": "Operational Control Boundaries"
+  },
+  "section_b": {
+    "compliance_score": 0.85,
+    "carbon_fitness": 0.97,
+    "actual_emissions": 133.0,
+    "conformance_method": "Token-Based Replay (TBR)",
+    "total_trace_count": 4,
+    "non_conforming_trace_count": 1,
+    "reference_model_id": 1,
+    "reference_model_version": 1,
+    "deviations_count": 3,
+    "deviations": [
+      {
+        "case_id": "CASE-003",
+        "activity_name": "Dispatch",
+        "deviation_type": "wrong_transition",
+        "expected_transition": null,
+        "actual_transition": null,
+        "severity": "Medium"
+      },
+      {
+        "case_id": "CASE-003",
+        "activity_name": "Trace Level Execution",
+        "deviation_type": "missing_tokens",
+        "expected_transition": null,
+        "actual_transition": null,
+        "severity": "High"
+      },
+      {
+        "case_id": "CASE-003",
+        "activity_name": "Trace Level Execution",
+        "deviation_type": "remaining_tokens",
+        "expected_transition": null,
+        "actual_transition": null,
+        "severity": "Low"
+      }
+    ],
+    "bottlenecks": [
+      {
+        "activity_name": "Approve PO",
+        "average_wait_time_sec": 600.0,
+        "occurrence_count": 3
+      },
+      {
+        "activity_name": "Deliver",
+        "average_wait_time_sec": 1800.0,
+        "occurrence_count": 4
+      },
+      {
+        "activity_name": "Dispatch",
+        "average_wait_time_sec": 1350.0,
+        "occurrence_count": 4
+      }
+    ],
+    "bottleneck_summary": {
+      "total_bottlenecks": 3,
+      "activities_impacted": 3
+    },
+    "variant_statistics": {
+      "total_variants": 2,
+      "variant_distribution": [
+        {
+          "variant_id": "cb5b1408-3478-40af-9dd9-d24f6be69f83",
+          "frequency": 3,
+          "percentage": 0.75
+        },
+        {
+          "variant_id": "189d538b-edd8-48b3-a027-65c7fd2e77b5",
+          "frequency": 1,
+          "percentage": 0.25
+        }
+      ]
+    },
+    "deviation_summary": {
+      "total_deviations": 3,
+      "by_severity": {
+        "High": 1,
+        "Medium": 1,
+        "Low": 1
+      }
+    }
+  },
+  "section_c": {
+    "esg_overall_score": 97.0,
+    "environmental_score": 100.0,
+    "social_score": 100.0,
+    "governance_score": 90.0,
+    "completeness_score": 100.0,
+    "total_energy_consumption_kwh": 0.0,
+    "energy_kwh": 0.0,
+    "total_water_consumption_liters": 0.0,
+    "water_consumption": 0.0,
+    "total_waste_generation_kg": 0.0,
+    "waste_generated": 0.0,
+    "total_actual_emissions_kg": 133.0,
+    "carbon_budget_limit_kg": 5000.0,
+    "carbon_budget_exceeded": false,
+    "total_suppliers_tracked": 3,
+    "supplier_esg_rankings": [
+      {
+        "supplier_id": "SUP-A",
+        "supplier_name": "SUP-A",
+        "supplier_country": "Unknown",
+        "emissions": 52.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      },
+      {
+        "supplier_id": "SUP-B",
+        "supplier_name": "SUP-B",
+        "supplier_country": "Unknown",
+        "emissions": 16.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      },
+      {
+        "supplier_id": "SUP-C",
+        "supplier_name": "SUP-C",
+        "supplier_country": "Unknown",
+        "emissions": 65.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      }
+    ],
+    "supplier_risk_rankings": [
+      {
+        "supplier_id": "SUP-A",
+        "supplier_name": "SUP-A",
+        "supplier_country": "Unknown",
+        "emissions": 52.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      },
+      {
+        "supplier_id": "SUP-B",
+        "supplier_name": "SUP-B",
+        "supplier_country": "Unknown",
+        "emissions": 16.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      },
+      {
+        "supplier_id": "SUP-C",
+        "supplier_name": "SUP-C",
+        "supplier_country": "Unknown",
+        "emissions": 65.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      }
+    ],
+    "supplier_esg_risk_rankings": [
+      {
+        "supplier_id": "SUP-A",
+        "supplier_name": "SUP-A",
+        "supplier_country": "Unknown",
+        "emissions": 52.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      },
+      {
+        "supplier_id": "SUP-B",
+        "supplier_name": "SUP-B",
+        "supplier_country": "Unknown",
+        "emissions": 16.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      },
+      {
+        "supplier_id": "SUP-C",
+        "supplier_name": "SUP-C",
+        "supplier_country": "Unknown",
+        "emissions": 65.0,
+        "spend": 0.0,
+        "risk_level": "Low",
+        "esg_score": 0.8
+      }
+    ],
+    "carbon_hotspots": [
+      {
+        "activity_name": "Approve PO",
+        "emissions_kg": 8.0,
+        "contribution_percentage": 6.015037593984962,
+        "severity": "Low"
+      },
+      {
+        "activity_name": "Create PO",
+        "emissions_kg": 18.0,
+        "contribution_percentage": 13.533834586466165,
+        "severity": "Medium"
+      },
+      {
+        "activity_name": "Deliver",
+        "emissions_kg": 39.0,
+        "contribution_percentage": 29.32330827067669,
+        "severity": "High"
+      },
+      {
+        "activity_name": "Dispatch",
+        "emissions_kg": 68.0,
+        "contribution_percentage": 51.127819548872175,
+        "severity": "Critical"
+      }
+    ]
+  },
+  "section_d": {
+    "traceability_matrix": [
+      {
+        "brsr_metric": "ESG Score",
+        "originating_engine": "ESG Scoring Engine",
+        "database_source": "esg_scores table",
+        "reference_field": "overall_score",
+        "report_field": "esg_overall_score",
+        "source_engine": "ESG Scoring Engine",
+        "source_metric": "overall_score",
+        "source_endpoint": "/api/v1/esg/scores"
+      },
+      {
+        "brsr_metric": "Environmental Score",
+        "originating_engine": "ESG Scoring Engine",
+        "database_source": "esg_scores table",
+        "reference_field": "environmental_score",
+        "report_field": "environmental_score",
+        "source_engine": "ESG Scoring Engine",
+        "source_metric": "environmental_score",
+        "source_endpoint": "/api/v1/esg/scores"
+      },
+      {
+        "brsr_metric": "Total Emissions",
+        "originating_engine": "Carbon Attribution Engine",
+        "database_source": "conformance_results table",
+        "reference_field": "actual_emissions",
+        "report_field": "total_actual_emissions_kg",
+        "source_engine": "Carbon Attribution Engine",
+        "source_metric": "actual_emissions",
+        "source_endpoint": "/api/process/{analysis_id}/conformance"
+      },
+      {
+        "brsr_metric": "Carbon Fitness Score",
+        "originating_engine": "Carbon Fitness Engine",
+        "database_source": "conformance_results table",
+        "reference_field": "carbon_fitness_score",
+        "report_field": "carbon_fitness",
+        "source_engine": "Carbon Fitness Engine",
+        "source_metric": "carbon_fitness_score",
+        "source_endpoint": "/api/process/{analysis_id}/conformance"
+      },
+      {
+        "brsr_metric": "Compliance / Fitness Score",
+        "originating_engine": "Conformance Check Engine",
+        "database_source": "conformance_results table",
+        "reference_field": "fitness_score",
+        "report_field": "compliance_score",
+        "source_engine": "Conformance Check Engine",
+        "source_metric": "fitness_score",
+        "source_endpoint": "/api/process/{analysis_id}/conformance"
+      },
+      {
+        "brsr_metric": "Energy Consumption",
+        "originating_engine": "Ingestion Pipeline",
+        "database_source": "sustainocpm_enterprise_30000_events.csv",
+        "reference_field": "energy_kwh mappings",
+        "report_field": "total_energy_consumption_kwh",
+        "source_engine": "Ingestion Pipeline",
+        "source_metric": "energy_kwh",
+        "source_endpoint": "/api/ingestion/datasets/{dataset_id}/sustainability-metrics"
+      },
+      {
+        "brsr_metric": "Water Consumption",
+        "originating_engine": "Ingestion Pipeline",
+        "database_source": "sustainocpm_enterprise_30000_events.csv",
+        "reference_field": "water_liters mappings",
+        "report_field": "total_water_consumption_liters",
+        "source_engine": "Ingestion Pipeline",
+        "source_metric": "water_liters",
+        "source_endpoint": "/api/ingestion/datasets/{dataset_id}/sustainability-metrics"
+      },
+      {
+        "brsr_metric": "Waste Generation",
+        "originating_engine": "Ingestion Pipeline",
+        "database_source": "sustainocpm_enterprise_30000_events.csv",
+        "reference_field": "waste_kg mappings",
+        "report_field": "total_waste_generation_kg",
+        "source_engine": "Ingestion Pipeline",
+        "source_metric": "waste_kg",
+        "source_endpoint": "/api/ingestion/datasets/{dataset_id}/sustainability-metrics"
+      },
+      {
+        "brsr_metric": "Supplier Risk Rankings",
+        "originating_engine": "Supplier Intelligence",
+        "database_source": "sustainocpm_enterprise_30000_events.csv",
+        "reference_field": "supplier_id, risk_level",
+        "report_field": "supplier_esg_risk_rankings",
+        "source_engine": "Supplier Intelligence",
+        "source_metric": "supplier_id, risk_level",
+        "source_endpoint": "/api/ingestion/datasets/{dataset_id}/sustainability-metrics"
+      },
+      {
+        "brsr_metric": "AI Recommendations",
+        "originating_engine": "AI Recommendations Engine",
+        "database_source": "ai_recommendations table",
+        "reference_field": "estimated_emission_reduction",
+        "report_field": "recommendations",
+        "source_engine": "AI Recommendations Engine",
+        "source_metric": "estimated_emission_reduction",
+        "source_endpoint": "/api/v1/copilot/generate"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "id": "845bb2e2-db44-4dd2-919a-fb56fba85a54",
+      "title": "Remediate carbon budget exceedance",
+      "description": "Carbon fitness is 97.0% and the allocated carbon budget is exceeded. Relocate emissions to lower-impact activities or enforce green routing.",
+      "priority": "CRITICAL",
+      "estimated_emission_reduction": 25.0,
+      "estimated_cost_reduction": 0.0,
+      "confidence_score": 90.0
+    },
+    {
+      "id": "42024f04-db77-4363-848e-9ac346842d41",
+      "title": "Reduce bottleneck wait times at Deliver",
+      "description": "Activity 'Deliver' represents the largest process delay with an average wait time of 1800.0 seconds across 4 occurrences. Reduce bottleneck wait times to lower idle emission overhead.",
+      "priority": "HIGH",
+      "estimated_emission_reduction": 5.0,
+      "estimated_cost_reduction": 15.0,
+      "confidence_score": 88.0
+    },
+    {
+      "id": "3db9b2a0-c6ac-484d-8d6e-d4c0943f2c7a",
+      "title": "Reduce emissions in Dispatch",
+      "description": "Carbon hotspot identified at 'Dispatch' emitting 68.0 kg CO2e (51.1% of total). Transition to energy-efficient operations or green resources to mitigate emissions in this stage.",
+      "priority": "CRITICAL",
+      "estimated_emission_reduction": 20.0,
+      "estimated_cost_reduction": 5.0,
+      "confidence_score": 87.0
+    }
+  ],
+  "sha256_hash": "ce7995b5da453a3cb16a80902d8b2e95be620c3b6fcb3e2701de5bf688f11484"
+}

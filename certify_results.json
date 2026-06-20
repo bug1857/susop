@@ -1,0 +1,120 @@
+{
+  "Total Events": {
+    "expected": 15,
+    "db": 15,
+    "svc": 0,
+    "api": null,
+    "dash": null,
+    "rep": null,
+    "cop": "N/A",
+    "status": "FAIL",
+    "failures": [
+      "Service",
+      "API",
+      "Dashboard",
+      "Report",
+      "Copilot"
+    ]
+  },
+  "Total Cases": {
+    "expected": 4,
+    "db": 4,
+    "svc": 4,
+    "api": 4,
+    "dash": 4,
+    "rep": 4,
+    "cop": "4",
+    "status": "PASS",
+    "failures": []
+  },
+  "Total Emissions": {
+    "expected": 133,
+    "db": 133.0,
+    "svc": 133.0,
+    "api": 133.0,
+    "dash": 133.0,
+    "rep": 133.0,
+    "cop": "133 kg",
+    "status": "PASS",
+    "failures": []
+  },
+  "Process Fitness": {
+    "expected": 0.75,
+    "db": 0.9375,
+    "svc": 0.85,
+    "api": 0.85,
+    "dash": 0.85,
+    "rep": 0.85,
+    "cop": "N/A",
+    "status": "FAIL",
+    "failures": [
+      "Database",
+      "Service",
+      "API",
+      "Dashboard",
+      "Report",
+      "Copilot"
+    ]
+  },
+  "Supplier Emissions SUP-C": {
+    "expected": 65,
+    "db": "N/A",
+    "svc": 65,
+    "api": 65,
+    "dash": 65,
+    "rep": 65.0,
+    "cop": "SUP-A = 52 kg\nSUP-B = 16 kg\nSUP-C = 65 kg",
+    "status": "FAIL",
+    "failures": [
+      "Database",
+      "Copilot"
+    ]
+  },
+  "Highest Transport Mode Air": {
+    "expected": 107,
+    "db": "N/A",
+    "svc": 107,
+    "api": 107,
+    "dash": 107,
+    "rep": "N/A",
+    "cop": "Air = 107 kg\n80.45%",
+    "status": "FAIL",
+    "failures": [
+      "Database",
+      "Report",
+      "Copilot"
+    ]
+  },
+  "Highest Shipment SH-004": {
+    "expected": 65,
+    "db": "N/A",
+    "svc": 65,
+    "api": 65,
+    "dash": 65,
+    "rep": "N/A",
+    "cop": "SH-001 = 42 kg\nSH-002 = 16 kg\nSH-003 = 10 kg\nSH-004 = 65 kg\nHighest: SH-004 = 65 kg",
+    "status": "FAIL",
+    "failures": [
+      "Database",
+      "Report",
+      "Copilot"
+    ]
+  },
+  "Digital Twin SUP-C to SUP-B Savings": {
+    "expected": 49,
+    "db": "N/A",
+    "svc": 49.0,
+    "api": 0.0,
+    "dash": 0.0,
+    "rep": "N/A",
+    "cop": "N/A",
+    "status": "FAIL",
+    "failures": [
+      "Database",
+      "API",
+      "Dashboard",
+      "Report",
+      "Copilot"
+    ]
+  }
+}
